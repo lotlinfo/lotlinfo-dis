@@ -1,0 +1,37 @@
+/*--- Fonts ---*/
+$header-font: 'Roboto', sans-serif;
+$main-font: 'Ubuntu', sans-serif;
+$subtitle-font: 'Ubuntu', sans-serif;
+
+
+
+
+
+
+
+/*Colors*/
+
+$gray: #858585;
+$dark-gray: #353535;
+$light-gray: #6d6d6d;
+$transparent-gray: rgba(0,0,0,.5);
+$light-light-gray: #b4b4b4;
+$light-red: #ed5252;
+
+
+
+$main-font-color: $gray;
+$headers-color: $dark-gray;
+$subtitle-color: $light-red;
+
+/*Layout*/
+$section-bg: #f3f3f3;
+
+
+  /*--Header---*/
+$header-h: 66px;
+$logo-width: 180px;
+$top-panel-bg-1: rgba(0, 0, 0, 0.5);
+$top-panel-bg-2: #fff;
+$top-menu-item-color: #fff;
+$top-menu-item-hover-color: $light-red;
