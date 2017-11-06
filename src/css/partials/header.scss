@@ -4,6 +4,7 @@ header{
   width: 100%;
   background-color: $top-panel-bg-1;
   height: $header-h;
+  z-index: 999;
 }
 .logo{
   height: $header-h;

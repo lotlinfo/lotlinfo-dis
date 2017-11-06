@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Главная</title>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:900|Ubuntu:400,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -31,8 +30,44 @@
     </div>
 </header>
 <main>
-    <div class="slider"></div>
-    <section class="news section-light">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-bg"></div>
+            <div class="carousel-item active" style="background-image: url('../../img/slider/slide3.png')">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h3>Новое видео "My Better Me"</h3>
+                    <p>Подробнее в разделе «Видео»</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('../../img/slider/slide1.jpg')">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h3>Swan songs II</h3>
+                    <p>Уже в продаже!</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('../../img/slider/slide2.jpg')">
+                <div class="carousel-caption d-flex flex-column justify-content-center">
+                    <h3>Какой-то там заголовок</h3>
+                    <p>И ещё строчечка</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    
+        <a href="#news" class="down"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+    
+    </div>
+    <section class="news section-light"><a name="news" id="news"></a>
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-sm-12 offset-sm-0">
@@ -397,7 +432,7 @@
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
-                <a data-fancybox="bottom-gallery" data-caption="Или оставить любое другое описалово.<br>Можно в пару строк, и, например,послать на другую нашу страницу" style="background-image: url('../../img/photo/2.jpg')" href="../../img/photo/2.jpg">
+                <a data-fancybox="bottom-gallery" data-caption="Или оставить любое другое описалово.<br>Можно в пару строк, и, например,послать на другую нашу страницу. Или оставить вообще без подписи" style="background-image: url('../../img/photo/2.jpg')" href="../../img/photo/2.jpg">
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
@@ -405,7 +440,7 @@
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
-                <a data-fancybox="bottom-gallery" data-caption="Все фото разных пропорций" style="background-image: url('../../img/photo/4.jpg')" href="../../img/photo/4.jpg">
+                <a data-fancybox="bottom-gallery" data-caption="Все фото разных пропорций, специально под эту галерею никакие фото готовить будет не надо - в ч/б они загоняются фильтрами, и в квадрат тоже. Разве что проверить, чтобы большие фото не были больше, скажем, 2к по ширине (просто, чтобы долго ен грузилось)" style="background-image: url('../../img/photo/4.jpg')" href="../../img/photo/4.jpg">
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
@@ -413,7 +448,7 @@
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
-                <a data-fancybox="bottom-gallery" data-caption="И мы,конечно, выберем для этой галерейки самые-самые)<br/>Причём их можно будет вставлять рандомно. Можем сотню фото накидать, и они рандомно будут вставляться, если надо" style="background-image: url('../../img/photo/6.jpg')" href="../../img/photo/6.jpg">
+                <a data-fancybox="bottom-gallery" data-caption=" И мы,конечно, выберем для этой галерейки самые-самые)<br/>Причём их можно будет вставлять рандомно. Можем сотню фото накидать, и они рандомно будут вставляться, если надо" style="background-image: url('../../img/photo/6.jpg')" href="../../img/photo/6.jpg">
                 </a>
             </div></div>
             <div class="bottom-gallery-item-wrapper"><div class="bottom-gallery-item">
@@ -438,6 +473,8 @@
 <footer>
 
 </footer>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
