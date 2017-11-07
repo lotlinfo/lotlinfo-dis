@@ -63,11 +63,12 @@
   background: rgba(0, 0, 0, .4);
   position: relative;
   min-height: 100vh;
+  .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
-.content {
-  padding: 120px 0;
-}
 
 .parallax-container {
   min-height: 100vh;
@@ -301,10 +302,10 @@
   text-shadow: 1px 1px 6px #555;
   h3{
     color: white;
-    font-size: calc(3rem + 1vw);
+    font-size: calc(2rem + 1vw);
   }
   p{
-    font-size:calc(2rem + 1vw);
+    font-size:calc(1.5rem + 1vw);
   }
 }
 .carousel-item {
