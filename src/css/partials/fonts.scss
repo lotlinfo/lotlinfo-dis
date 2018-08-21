@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'compact';
+  src: url('../fonts/compact-bold-webfont.woff2') format('woff2'),
+  url('../fonts/compact-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'compact';
+  src: url('../fonts/compact-regular-webfont.woff2') format('woff2'),
+  url('../fonts/compact-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

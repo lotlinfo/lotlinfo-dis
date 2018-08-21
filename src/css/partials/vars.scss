@@ -16,6 +16,7 @@ $dark-gray: #353535;
 $dark-dark-gray: #202021;
 $light-gray: #6d6d6d;
 $transparent-gray: rgba(0,0,0,.5);
+$transparent-dark-gray: rgba(0,0,0,.85);
 $light-light-gray: #b4b4b4;
 $light-red: #ed5252;
 
@@ -32,7 +33,11 @@ $section-bg: #f3f3f3;
   /*--Header---*/
 $header-h: 66px;
 $logo-width: 180px;
-$top-panel-bg-1: rgba(0, 0, 0, 0.5);
-$top-panel-bg-2: #fff;
-$top-menu-item-color: #fff;
+$top-panel-bg-1: $transparent-gray;
+$top-panel-submenu-bg: $transparent-dark-gray;
 $top-menu-item-hover-color: $light-red;
+$top-submenu-item-color: #fff;
+$top-panel-dark-bg: $transparent-gray;
+$top-panel-dark-item-color: #fff;
+$top-panel-light-bg: #fff;
+$top-panel-light-item-color: $dark-gray;

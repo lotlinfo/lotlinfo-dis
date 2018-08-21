@@ -2,9 +2,14 @@ header{
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: $top-panel-bg-1;
   height: $header-h;
   z-index: 999;
+  &.dark{
+    background-color: $top-panel-dark-bg;
+  }
+  &.light{
+    background-color: $top-panel-light-bg;
+  }
 }
 .logo{
   height: $header-h;
@@ -19,31 +24,77 @@ header nav{
 .top-menu{
   font-family: $header-font;
   font-weight: 900;
-  font-size: .95rem;
+  font-size: .93rem;
   height: 100%;
   margin: 0;
   padding: 0;
   text-align: right;
+  list-style: none;
+  & ul{
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    background-color: $top-panel-submenu-bg;
+    display: none;
+    opacity: 0;
+    transition: opacity .4s ease-out;
+    text-align: right;
+    right: 0;
+    font-size: .85rem;
+  }
 }
 .top-menu__item{
   display: inline-block;
   height: 100%;
-}
-.top-menu__item a{
-  transition: color .2s ease-out;
-  color: $top-menu-item-color;
-  height: 100%;
-  position: relative;
-  line-height: $header-h;
-}
-.top-menu__item>a>span{
-  padding: 0 17px;
-  position: relative;
   text-transform: uppercase;
+  position: relative;
+    a{
+    transition: color .2s ease-out;
+    height: 100%;
+    position: relative;
+  }
+  & span{
+    padding: 0 17px;
+    position: relative;
+    line-height: $header-h;
+    white-space: nowrap;
+  }
+  &.active span{
+    color: $top-menu-item-hover-color;
+  }
+  &>ul{
+    li{
+      display: block;
+      span{
+        line-height:1.5;
+      }
+    }
+  }
 }
-
 .top-menu__item:hover{
   a{
     color: $top-menu-item-hover-color;
+    text-decoration: none;
+  }
+  &>ul{
+    display: block;
+    position: absolute;
+    opacity: 1;
+    li:not(.active) a{
+      color: $top-submenu-item-color;
+    }
+    li:hover a{
+      color: $top-menu-item-hover-color;
+    }
+  }
+}
+header.dark{
+  .top-menu__item a{
+    color:$top-panel-dark-item-color;
+  }
+}
+header.light{
+  .top-menu__item a{
+    color:$top-panel-light-item-color;
   }
 }
